@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Racing!!</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<header>
+  <p>Choose a racer, then click the stop light to start the race!</p>
+</header>
+<script src="Race.js"></script>
+<body>
+  <div class="light-container">
+    <img src=images/redLight.png id="stopLight" onClick="document.getElementById('stopLight').src='images/greenlight.png'" onClick="startRace()" width="75" height = "150">
+    </div>
+    
+    <input type=button onClick=resetRace()>
+
+<div class="marioCart"><img src=images/Mario.png id=mario width="75" onClick="marioSelected()"></div>
+<div class="luigiCart"><img src=images/Luigi.png id=luigi width="75" onClick="luigiSelected()"></div>
+<div class="warioCart"><img src=images/Wario.png id=wario width="75" onClick="warioSelected()"></div>
+<div class="waluigiCart"><img src=images/Waluigi.png id=waluigi width="75" onClick="waluigiSelected()"></div>
+
+
+<div id="result"> Somebody won! The race is over!</div>
+
+
+</body>
+</html>
